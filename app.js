@@ -10,12 +10,8 @@ app.get("/" , function(req, res){
 
         response.on("data" , function(data){
             const weatherData = JSON.parse(data);
-            const object = {
-                name: "prabhavi",
-                age: 23
-            }
-
-            console.log(JSON.stringify(object));
+            const temp = weatherData.weather[0].description
+            console.log(temp);
         })
     }) 
     res.send("Server is up and running.");
