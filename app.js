@@ -12,7 +12,7 @@ app.get("/" , function(req, res){
             const weatherData = JSON.parse(data)
             const temp = weatherData.main.temp
             const weatherDescription = weatherData.weather[0].description
-            res.send("The temperature in London is " + temp + " degrees Celcious.");
+            res.send("<h1>The temperature in London is " + temp + " degrees Celcious.</h1>");
         })
     }) 
  
