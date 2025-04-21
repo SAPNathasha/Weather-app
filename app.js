@@ -11,7 +11,7 @@ app.get("/" , function(req, res){
 })
 
 app.post("/" , function(req,res){
-    console.log("Post request received");
+    console.log(req.body.cityName);
 })
 
 app.listen(3000, function(){
